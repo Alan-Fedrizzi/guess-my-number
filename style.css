@@ -34,6 +34,11 @@ header {
   height: 35vh;
   border-bottom: 7px solid #eee;
 }
+@media only screen and (max-height: 41.25em) {
+  header {
+    height: 50vh;
+  }
+}
 
 main {
   height: 65vh;
@@ -46,6 +51,11 @@ main {
   main {
     flex-direction: column;
     justify-content: space-evenly;
+  }
+}
+@media only screen and (max-height: 41.25em) {
+  main {
+    height: 50vh;
   }
 }
 
@@ -68,6 +78,11 @@ main {
 @media only screen and (max-width: 37.5em) {
   .right {
     width: 80%;
+  }
+}
+@media only screen and (max-height: 41.25em) {
+  .right {
+    display: none;
   }
 }
 

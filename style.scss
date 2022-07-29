@@ -9,6 +9,7 @@
 /* BREAKPOINTS */
 $bp-large: 50em; // 800px
 $bp-medium: 37.5em; // 600px
+$bp-height: 41.25em; // 660px
 
 html {
   font-size: 62.5%;
@@ -35,6 +36,10 @@ header {
   position: relative;
   height: 35vh;
   border-bottom: 7px solid #eee;
+
+  @media only screen and (max-height: $bp-height) {
+    height: 50vh;
+  }
 }
 
 main {
@@ -47,6 +52,10 @@ main {
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  @media only screen and (max-height: $bp-height) {
+    height: 50vh;
   }
 }
 
@@ -67,6 +76,10 @@ main {
 
   @media only screen and (max-width: $bp-medium) {
     width: 80%;
+  }
+
+  @media only screen and (max-height: $bp-height) {
+    display: none;
   }
 }
 
