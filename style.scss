@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,23 +7,24 @@
 }
 
 /* BREAKPOINTS */
+$bp-large: 50em; // 800px
+$bp-medium: 37.5em; // 600px
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-}
-@media only screen and (max-width: 50em) {
-  html {
-    font-size: 56.25%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 56.25%; // 1rem = 9px
   }
-}
-@media only screen and (max-width: 37.5em) {
-  html {
-    font-size: 50%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%; // 1rem = 8px
   }
 }
 
 body {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -41,9 +43,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-@media only screen and (max-width: 37.5em) {
-  main {
+
+  @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -54,9 +55,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media only screen and (max-width: 37.5em) {
-  .left {
+
+  @media only screen and (max-width: $bp-medium) {
     width: 80%;
   }
 }
@@ -64,9 +64,8 @@ main {
 .right {
   width: 52rem;
   font-size: 2rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .right {
+
+  @media only screen and (max-width: $bp-medium) {
     width: 80%;
   }
 }
@@ -80,9 +79,8 @@ h1 {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 37.5em) {
-  h1 {
+
+  @media only screen and (max-width: $bp-medium) {
     line-height: 1.6;
   }
 }
@@ -147,4 +145,4 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}
