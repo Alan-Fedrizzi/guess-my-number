@@ -26,6 +26,7 @@ body {
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
+  overflow: auto;
 }
 
 /* LAYOUT */
@@ -36,7 +37,7 @@ header {
 }
 @media only screen and (max-height: 41.25em) {
   header {
-    height: 50vh;
+    height: 28rem;
   }
 }
 
@@ -55,7 +56,7 @@ main {
 }
 @media only screen and (max-height: 41.25em) {
   main {
-    height: 50vh;
+    height: 45rem;
   }
 }
 
@@ -70,6 +71,12 @@ main {
     width: 80%;
   }
 }
+@media only screen and (max-height: 41.25em) {
+  .left {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+  }
+}
 
 .right {
   width: 52rem;
@@ -82,7 +89,12 @@ main {
 }
 @media only screen and (max-height: 41.25em) {
   .right {
-    display: none;
+    padding-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 24em) {
+  .right {
+    font-size: 1.8rem;
   }
 }
 
@@ -101,6 +113,12 @@ h1 {
     line-height: 1.6;
   }
 }
+@media only screen and (max-width: 24em) {
+  h1 {
+    font-size: 3rem;
+    top: 60%;
+  }
+}
 
 .number {
   background: #eee;
@@ -113,6 +131,13 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+@media only screen and (max-width: 24em) {
+  .number {
+    font-size: 4rem;
+    width: 12rem;
+    padding: 2rem 0rem;
+  }
 }
 
 .between {
@@ -127,6 +152,11 @@ h1 {
   top: 2rem;
   left: 2rem;
 }
+@media only screen and (max-width: 24em) {
+  .again {
+    top: 4rem;
+  }
+}
 
 .guess {
   background: none;
@@ -140,6 +170,13 @@ h1 {
   display: block;
   margin-bottom: 3rem;
 }
+@media only screen and (max-width: 24em) {
+  .guess {
+    font-size: 4rem;
+    padding: 2rem;
+    width: 20rem;
+  }
+}
 
 .btn {
   border: none;
@@ -149,6 +186,13 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 24em) {
+  .btn {
+    font-size: 1.8rem;
+    font-family: inherit;
+    padding: 1.6rem 2.4rem;
+  }
 }
 
 .btn:hover {
